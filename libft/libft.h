@@ -4,6 +4,14 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+//_______STRUCTURE__________//
+
+typedef struct	s_list
+{
+	void		*content;
+	struct	s_list	*next;
+}			t_list;
+
 //________LIBC_____________//
 
 size_t	ft_strlen(const char *s);
