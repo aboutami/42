@@ -1,1 +1,6 @@
-#include "includes/push_swap.h"
+#include "../inc/push_swap.h"
+
+int	main()
+{
+	printf("Make file is integrated");
+}
