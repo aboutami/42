@@ -2,5 +2,6 @@
 
 int	main()
 {
-	printf("Make file is integrated");
+	printf("Make file: integrated\n");
+	printf("Folder structure: integrated\n");
 }
