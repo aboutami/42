@@ -29,7 +29,15 @@ void    push_A(node     **p2h_b,node    **p2h_a)
         free(temp);
 }
 
-
+void free_stack(node *stack)
+{
+	while (stack != NULL)
+	{
+		node *temp = stack;
+		stack = stack->next;
+		free(temp);
+	}
+}
 
 void print_stack(node *p) {
     while (p != NULL) {
@@ -71,6 +79,7 @@ int main() {
     print_stack(stack_a);
     printf("Stack B: ");
     print_stack(stack_b);
-
+    free_stack(stack_a);
+    free_stack(stack_b);
     return 0;
 }
