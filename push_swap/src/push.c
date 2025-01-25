@@ -1,8 +1,8 @@
 #include "../inc/push_swap.h"
 
-void	push(int x, node **p2h)
+void	push(int x, t_node **p2h)
 {
-	node	*new_node;
+	t_node	*new_node;
 
 	if (!p2h)
 		return ;
@@ -14,9 +14,9 @@ void	push(int x, node **p2h)
 	*p2h = new_node;
 }
 
-void	push_b(node **p2h_b, node **p2h_a)
+void	push_b(t_node **p2h_b, t_node **p2h_a)
 {
-	node	*temp;
+	t_node	*temp;
 
 	if (!p2h_b || !p2h_a)
 		return ;
@@ -28,9 +28,9 @@ void	push_b(node **p2h_b, node **p2h_a)
 	free(temp);
 }
 
-void	push_a(node **p2h_b, node **p2h_a)
+void	push_a(t_node **p2h_b, t_node **p2h_a)
 {
-	node	*temp;
+	t_node	*temp;
 
 	if (!p2h_b || !p2h_a)
 		return ;

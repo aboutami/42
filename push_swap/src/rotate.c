@@ -1,9 +1,9 @@
 #include "./inc/push_swap.h"
 
-void	rotate_a(node **p2h_a)
+void	rotate_a(t_node **p2h_a)
 {
-	node	*last;
-	node	*first;
+	t_node	*last;
+	t_node	*first;
 
 	if (!p2h_a || !*p2h_a || !(*p2h_a)->link)
 		return ;
@@ -14,10 +14,10 @@ void	rotate_a(node **p2h_a)
 	first->link = NULL;
 }
 
-void	rotate_b(node **p2h_b)
+void	rotate_b(t_node **p2h_b)
 {
-	node	*last;
-	node	*first;
+	t_node	*last;
+	t_node	*first;
 
 	if (!p2h_b || !*p2h_b || !(*p2h_b)->link)
 		return ;
@@ -28,7 +28,7 @@ void	rotate_b(node **p2h_b)
 	first->link = NULL;
 }
 
-void	rotate_ab(node **p2h_b, node **p2h_a)
+void	rotate_ab(t_node **p2h_b, t_node **p2h_a)
 {
 	rotate_a(p2h_a);
 	rotate_b(p2h_b);

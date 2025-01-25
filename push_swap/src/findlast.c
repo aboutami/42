@@ -1,8 +1,8 @@
 #include "../inc/push_swap.h"
 
-node	*findlast(node **p2h)
+t_node	*findlast(t_node **p2h)
 {
-	node	*last;
+	t_node	*last;
 
 	if (!p2h || !*p2h)
 		return (NULL);

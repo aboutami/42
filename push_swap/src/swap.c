@@ -1,9 +1,9 @@
 #include "../inc/push_swap.h"
 
-void	swap_a(node **p2h_a)
+void	swap_a(t_node **p2h_a)
 {
-	node	*node1;
-	node	*node2;
+	t_node	*node1;
+	t_node	*node2;
 
 	if (!p2h_a ||!*p2h_a || !(*p2h_a)->link)
 		return ;
@@ -14,10 +14,10 @@ void	swap_a(node **p2h_a)
 	node2->link = node1;
 }
 
-void	swap_b(node **p2h_b)
+void	swap_b(t_node **p2h_b)
 {
-	node	*node1;
-	node	*node2;
+	t_node	*node1;
+	t_node	*node2;
 
 	if (!p2h_b ||!*p2h_b || !(*p2h_b)->link)
 		return ;
@@ -28,7 +28,7 @@ void	swap_b(node **p2h_b)
 	node2->link = node1;
 }
 
-void	swap_ab(node **p2h_a, node **p2h_b)
+void	swap_ab(t_node **p2h_a, t_node **p2h_b)
 {
 	swap_a(p2h_a);
 	swap_b(p2h_b);
