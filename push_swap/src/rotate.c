@@ -1,4 +1,4 @@
-#include "./inc/push_swap.h"
+#include "../inc/push_swap.h"
 
 void	rotate_a(t_node **p2h_a)
 {

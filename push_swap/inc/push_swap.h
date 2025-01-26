@@ -10,7 +10,14 @@ typedef struct node
 	struct node	*link;
 }	t_node;
 
+
+int     ft_atoi(const char *s, int *error_flag);
 t_node	*findlast(t_node **p2h);
+int     finddup(t_node **p2h);
+int     ft_strcmp(const char *s1, const char *s2);
+t_node		*is_valid(int argc, char *argv[]);
+void    start(t_node **p2h_a);
+int     ft_isdigit(int c);
 void	push(int x, t_node **p2h);
 void	push_a(t_node **p2h_a, t_node **p2h_b);
 void	push_b(t_node **p2h_b, t_node **p2h_a);

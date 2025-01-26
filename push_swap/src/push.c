@@ -6,7 +6,7 @@ void	push(int x, t_node **p2h)
 
 	if (!p2h)
 		return ;
-	new_node = malloc(sizeof(node));
+	new_node = malloc(sizeof(t_node));
 	if (!new_node)
 		return ;
 	new_node->value = x;
