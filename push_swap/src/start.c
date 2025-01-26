@@ -15,29 +15,29 @@ void	start(t_node **p2h_a)
 	bottom = stack_a->link->link->value;
 	if (mid > top && bottom > mid)
 		return;
-	if(mid < top && bottom < mid)
+	else if(mid < top && bottom < mid)
 	{
 		swap_a(p2h_a);
 		printf("sa\n");
 		reverse_rotate_a(p2h_a);
 		printf("rra\n");
 	}	
-	if(mid < top && bottom > top)
+	else if(mid < top && bottom > top)
 	{
 		swap_a(p2h_a);
 		printf("sa\n");
 	}
-	if(mid < top && bottom > mid && bottom < top)
+	else if(mid < top && bottom > mid && bottom < top)
 	{
 		rotate_a(p2h_a);
 		printf("ra\n");
 	}
-	if(mid > top && bottom < top)
+	else if(mid > top && bottom < top)
 	{
 		reverse_rotate_a(p2h_a);
 		printf("rra\n");
 	}
-	if(mid > top && bottom < mid)
+	else if(mid > top && bottom < mid)
 	{
 		swap_a(p2h_a);
 		printf("sa\n");
